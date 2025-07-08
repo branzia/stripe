@@ -1,0 +1,33 @@
+{
+    "name": "branzia/stripe",
+    "description": "Stripe payment gateway for Branzia",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "branzia/payment": "@dev"      
+    },
+    "authors": [
+        {
+            "name": "Visvanathan",
+            "email": "visvanathan.tech@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Branzia\\Stripe\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Branzia\\Stripe\\Providers\\StripeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
